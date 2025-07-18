@@ -1,0 +1,43 @@
+StringBuffer is Thread Safe - Methods are synchronized, ensuring safe concurrent access, making it slower
+StringBuilder is Not Thread Safe - methods are not synchronized, making it faster
+
+N+1 people manager
+
+package FirstPackage;
+
+public class Main {
+    public static void collectLogs(String ...data){
+        for(String d : data){
+            System.out.println(d);
+        }
+    }
+    
+    public static void main(String[] args) {
+        
+        Main.collectLogs("1", "2", "3");
+    }
+}
+
+Exception Handling:
+try, catch, finally, throw, throws, user defined, checked, unchecked
+
+throws would throw exception and inform the caller (main method) so that main method can take action accordingly
+
+unchecked exceptions - run time exceptions (ArithmeticException, ArrayIndexOutOfBOundsException, NullPointerException)
+checked exceptions - compile time exceptions (FileNotFoundException)
+
+----------------------------------------------------------------------------------------------------------
+Pattern regexPattern = new Pattern.compile("abc");
+Matcher matcher = regexPattern.matcher("abc123xyz");
+matcher.find();
+
+compile methods convert into a format which is efficient.
+
+matcher.start() gives 0
+matcher.end() gives 3
+matcher.group() gives abc
+--------------------------------------
+.compile(",")
+.matcher("name,r,v")
+
+matcher.replaceFirst(":")

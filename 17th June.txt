@@ -1,0 +1,85 @@
+Inherited Method are method transferred from parent class to child class and child class doesn't modify that method.
+Specialized Methods are methods belonging to only that class.
+Overridden Methods are methods that are transferred from parent class to child class and child class modifies it.
+
+
+
+Constructors do not participate in inheritance in java.
+In every child class java checks is there any constructor available or not, if present then inside that constructor i.e, is first line java adds super().
+when super() is encountered java automatically calls parent class constructor.
+Java by default creates constructor in java with super() if extending.
+
+final keyword in java:
+1) variable - cannot be changed/modified
+2) method - cannot be overridden
+3) class - cannot be extended
+
+
+Polymorphism :
+1. Compile Time/ Early Binding/ Static Polymorphism
+2. Run Time/ Late Binding/ Dynamic Polymorphism
+
+**Objects are created by JVM, after clicking on RUN**
+
+Static Polymorphism: Happens at compile time, Compiler decides which method has to be called.
+Dynamic Polymorphism: Happens at runtime, Compiler cannot decide which method as it cannot see the right side
+
+1. Compiler is sure about un-inherited class so compiler is sure that class and its constructor and its methods that will be called.
+2. But during inheritance compiler cannot decide which method it has to call, which object will be assigned to parent class and which method it has to call(override or parent method)
+
+----------------------------------------------
+Exception: If we make a method static, then runtime polymorphism doesn't happen, compile time occurs because it will ignore object and will always associate with class.
+Non-Static methods resolve at Run time, static methods will be resolved at Compile Time.
+---------------------------------------------
+
+Abstract Class and Abstract Methods:
+Abstract methods are methods which doesn't have body.
+Abstract classes are partially abstract, hence less shareability
+While Interface are fully abstract, hence more shareability
+
+-----------------------------------------------------------------------
+=> Interface can extend another interface
+=> Multiple Inheritance is possible using interfaces
+
+
+Packages:  Organize java files
+
+Format: com.companyname.project
+
+com.capgemini.sogetti
+   com.capgemini.frontend
+   ....
+   com.capgemini.database
+
+
+Access Modifiers: keywords that controls visibility of the program
+
+-------------------------------------------------------------------------------------------------------------------
+two public classes are not allowed in one java file and public classname should be filename
+----------------------------------------------------------------------------------------------------------------
+
+Strings: Collection of Characters enclosed within double quotes.
+
+String name = "Vedant";
+
+stack memory     name -------------------------------------> Vedant       heap memory (constant pool)
+
+
+
+1) Check whether string is created using new keyword or not, if not then it will kept in constant pool of Heap Memory. Reference variable name is stored in stack memory which points to heap location.
+
+2) String class is immutable in java;
+StringBuffer is mutable 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3) In constant pool duplicates are not allowed, i.e name and name3 will point to "Vedant" i.e "Vedant" == "Vedant" object address comparison 1000 == 1000 (Only works when new keyword is not used) (in constant pool)
+if new keyword is used then name and name3 will get different object address regardless of their content. (It's object will now get created in heap memory outside constant pool and its copy of string literal will be inside constant pool for memory optimization)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+length, substring(start), substring/(start, end), indexOf(""), split(" "), charAt(num)
+compareTo() - name1 - name2
+contains
+
+
+
+

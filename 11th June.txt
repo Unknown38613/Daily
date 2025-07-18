@@ -1,0 +1,24 @@
+Security Testing:
+
+Android O.S Problems:- 
+1) No security for third-party apps 
+2) Delay in software updates
+3) Pre-installed applications(Bloatware)
+
+Various ways available to achieved security (Device/App) : 
+1) Always download apps from verified sources (playstore, appstore)
+2) Give the permission to the app which is controlled by the user.
+3) Use some lock mechanism (PIN, Pattern, ...) 
+4) Use Antivirus software 
+5) Security by Masking data ( hide the data (wifi name = capg_01 => acceptable_01))
+6) Encryption : 
+Password ==> Bcrypt ( hash()) ==> encrypted data
+Salt are random character added to your encrypted data
+7) XSS attack( Cross Site Scripting) - It is a attack where the hacker will try to introduce some javascript code through the UI.
+We have to sanitize the incoming data( >, <, *, !, - Ignore) => cloudware 
+8) SQL Injection: It is a attack where the attacker tries to modify the SQL query to trick the database.
+insett into registration(username, password) values ( username, password)
+                                                      "1"=="1", "1"=="1"
+select * from registration where username = "1" == "1"
+
+
