@@ -1,0 +1,91 @@
+Pattern regexPattern = Pattern.compile("[crat]");
+Matcher matcher = regexPattern.matcher("cat rat mat cat rat cat");
+find() gives boolean
+while(Matcher.find()) matcher.start() + matcher.group()   // 1:a 2:b
+
+["ct"] - individually checks for c and t in whole string
+small cases:
+"[a-z]" - all from a to z
+"[^a-z]" - apart from a to z(negation) including whitespaces too
+Capital :
+"[A-Z]"
+"[r-zA-F]" - r to z and A to F
+"[^r-zA-F]" - apart from r to z and A to F
+
+
+Pattern regexPattern = Pattern.compile("[A-Z]", Pattern.CASE_INSENSITIVE); //same as [A-Za-z]
+
+Mobile Number Validation:
+{9} - Multiply with 9
+("[6-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]")
+("[6-9][0-9]{9}")
+("[6-9]\\d{9}")  extra \ for checking in regex module rather than javac
+
+("[a-z]\\d[A-Z]\\d[a-z]");
+
+\\d = [0-9]
+\\D = [^0-9]
+\\w = [a-zA-Z0-9]
+\\W = [^a-zA-Z0-9]
+\\s = spaces
+\\S = everything except spaces
+
+
+? Zero or One Times  colou?r  means u can be present zero or one time so color and colour both will be identified but not colouur
+* Zero  or one or any times colou*r means color and colouuuuuuur
++ One or more times colou+r means colour and colouuuur not color
+{n} - n no. of times
+{m, n}  range min m and max n
+. matches anything apart from \n, skips character with \n (only one character)
+Hello123
+(".") - any (not all) - true
+(.*) - all
+("H.3") - only single - false
+("H.*3") - any - true
+("H.*") - any 
+("H.l.") - there is no end . will continue hence true
+("H.l") - false only one character and end value is given 
+("H..l.") - true
+
+("https?://(w{3}.)?[a-z0-9-]+\\.[a-z]{2,6}")
+("^(http | https)://(w{3}\\.)?[a-z0
+
+
+("^([a-zA-Z0-9]\\.-)+@[a-zA-Z0-9.-]+\\.[a-z]{2,6}$")
+
+^[A-Za-z0-9+_.-]+@(.+)$
+
+^[a-zA-Z0-9_+&*-]+(?:\\.[a-zA-Z0-9_+&*-]+)*@" +"(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,7}$
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Group in Regex: Groups helps us to target different parts of our string.
+String data = "The employee names are Raju and Ramu" 
+
+The name are (\\w+) and (\\w+)
+matcher.group(1)
+matcher.group(2)
+
+The date is 03/06/2003
+The date is (\\d{2})/(\\d{2})/(\\d{4})
+
+Capturing Groups are the groups that we capture and java internally stores it, later we can access using matcher.group(1), 2, ....
+
+?: Non - Capturing Group (?:\\d{4})  don't capture and java does store it. ( Match domains but not store)
+
+<h1>(.*)</h1>
+
+log data - date, time, output, 
+
+(\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}) ([A-Za-z]+) - ([A-Za-z\\s]+)
+
+job job jobless is Raju wants to get job
+
+\\b - word boundary
+
+("\\bjob\\b") only job word will be targeted not any jobless or suffix
+
+Non capturing group will not be considered 
+
+<h1>.+</h1>
+<h1>.+?</h1>
+
