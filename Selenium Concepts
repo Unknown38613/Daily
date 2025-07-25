@@ -1,0 +1,82 @@
+1. Browser Control:
+- WebDriver
+- Driver Commands
+- Browser Navigation
+- Window Management
+
+2. Locator Strategies:
+- ID
+- Class Name
+- Name
+- Link Text
+- Partial Link Text
+- Tag Name
+- CSS Selectors
+- XPath (Absolute/Relative)
+- Relative Locators
+
+3. Element Interaction:
+- Click
+- Send Keys
+- Clear
+- Submit
+- Get Text
+- Get Attribute
+- Is Displayed/Enabled/Selected
+
+4. Synchronization:
+- Implicit Wait
+- Explicit Wait
+- Fluent Wait
+- Sleep
+
+5. Dropdown Handling:
+- Select Class
+- SelectByIndex
+- SelectByValue
+- SelectByVisibleText
+- Multi-select
+
+6. Window Management:
+- getWindowHandle
+- getWindowHandles
+- switchTo().window()
+- Maximize/Minimize
+- Fullscreen
+
+7. Frame Handling:
+- switchTo().frame()
+- switchTo().parentFrame()
+- switchTo().defaultContent()
+
+8. Alert Handling:
+- switchTo().alert()
+- Accept/Dismiss
+- SendKeys to Alert
+- Get Alert Text
+
+9. Mouse & Keyboard Actions:
+- Actions Class
+- moveToElement
+- dragAndDrop
+- doubleClick
+- contextClick
+- keyDown/keyUp
+- sendKeys
+
+19. Navigation:
+- get()
+- navigate().to()
+- navigate().back()
+- navigate().forward()
+- navigate().refresh()
+
+20. Utility Functions:
+- isDisplayed()
+- isEnabled()
+- isSelected()
+- getAttribute()
+- getCssValue()
+- getLocation()
+- getSize()
+- getText()
