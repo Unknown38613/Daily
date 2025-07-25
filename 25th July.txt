@@ -1,0 +1,77 @@
+Selenium IDE
+Record and Playback Tool
+Selenium WebDriver (one after other)
+Selenium GRID(execute the test cases in multiple devices)
+
+Selenium WebDriver
+
+NoSuchElementException
+
+driver.get();
+driver.findElement(By.id("email")
+classname
+linktext
+paritallinktext
+css selectors
+1) tag name and id  tagname#id 
+2) tag name and class name tagname.class 
+3) tag name and attribute tagname[attrname=attrivalue] 
+4) tagname, attribute, id tagname#id[attrname = attrivalue]
+5) tagname, attribute, class  tagname.class[attrname = attrivalue]
+6) starts with (^) tagname[attrname^=attrvalue]   ex= input[name="email"]
+7) endsWith($) tagname[attrname$=attrvalue] 
+
+XPath if we are unable to identify a webelement using any of the above locators, then we can identify using XPATH.
+Xpath is a path that is written by looking at the html tree structure.
+
+html 
+head body
+title  input1 input2
+
+/html/body/input1  - Absolute XPath(from root element)
+//input[1] - Relative XPath
+Xpath using text method (can't identify trailing and beginning spaces) use contains
+//tagname[text()='----']
+
+implicit wait
+
+XPath with tagname and attribute
+tagname[@attrname=attrvalue]
+
+(//input[@role='searchbox'])[1]
+
+implicit wait -
+explicit wait -
+fluid wait - polling time
+
+
+How to handle dropdowns :
+dropdown with options - SELECT class
+Select s = new Select
+s.selectByIndex()
+s.selectByVisibleText()
+s.selectByValue()
+
+driver.close() - close all the parent tabs
+driver.quit() - all the tab 
+
+autosuggestive dropdown - text(), implicitWait()
+
+
+List<WebElements> result = driver.findElements(By.tagName("a"));
+
+findElement targets only one element, return type is WebElements, NoSuchElementException is not found 
+findElements targets multiple elements, return type is list of WebElements, will give not exception
+
+driver.findElement(By.linkText("Click 2").click();
+String result = driver.findElement(By.xpath("
+String parentAddr =  driver.getWindowHandle(); //parent tab address
+Set<String> allAddr = driver.getWindowHandles();
+for(String i : allAddr){
+driver.switchTo().window(i);
+}
+
+findElements = list
+getWindowHandles = set
+
+

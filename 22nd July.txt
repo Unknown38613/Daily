@@ -1,0 +1,10 @@
+Comparator Interface
+
+public Boolean equals(Object obj){
+Book secondBook = (Book)obj;
+return this.id == secondBook.id;
+}
+
+public int hashCode(){
+ return Objects.hash(d);
+}

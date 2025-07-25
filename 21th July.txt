@@ -1,0 +1,31 @@
+Collections is interface in Java
+Interface extends Interface
+List (Interface) 10 methods ..... 3 Classes implementing ArrayList , LinkedList, Vector -> Stack (extends)
+Set (Interface)
+Queue (Interface)
+
+List.add() Insertion order maintained, duplicate allowed, same type of data or different type of data
+set(index, element)
+remove() for string directly, for int(indexno)
+contains(element)
+addFirst(element), addLast(element)
+clear()
+indexOf(element)
+isEmpty()
+size()
+
+
+FileOutputStream read Character data
+Collections accept only Object data
+FileOutputStream fos = new FileStreamOutput("...");
+ObjectOutputStream (take object convert to bytes)
+
+ObjectOutputStream oos = new ObjectOutputStream(fos);
+oos.writeObject(arrayList)
+
+ArrayList (object) -> OOS -> (Byte) -> FOS -> Data.txt.
+
+Data.txt -> FIS -> (Bytes) -> OIS -> (Object) -> ArrayList
+(List) ois.readObject()
+
+FileInputStream fis = 
