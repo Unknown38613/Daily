@@ -1,0 +1,36 @@
+alert 
+confirm
+prompt
+
+UnhandledAlertException when we switch to driver without handling alert popup
+NoAlertPresntException when we declare alert interface but after clicking button not alert is present
+TimeOutException 
+
+driver.switchTo().
+frame() index starts from 0
+parentFrame() jumps to recent parent
+defaultContent() jumps to initial page
+
+NoSuchElementException - selenium doesn't see the web element
+ElementNotVisibleException / ElementNotInteractableException  - Occurs in 4 scenarios: -
+1) Element is there but selenium is not able to interact else NoSuchElementException if no element found.
+2) When element is declared Hidden.
+
+StaleElementReferenceException -  when we point to one element then navigate forward and come back again then that reference will no longer be valid.
+
+There are some places where selenium web driver with Java/python/ruby/c# FAILS, where as JavaScript will work.
+1) It cannot automate hidden elements, but using JavaScript we can. (JavascriptExecutor interface, executeScript method)
+JavaScriptExecutor anotherDriver = (JavascriptExecutor) driver;
+anotherDriver.executeScript("arguments[0].value='Raju"',exe);
+2) In infinite scrolling, selenium cannot target infinite scrolling anotherDriver.executeScript("window.scrollBy(0, document.body.scrollHeight)");
+
+Selenium WebDriver has additional issues:
+1) Report Generation
+2) Managing multiple test cases
+3) Run test cases parallel
+4) Parametrization (getting data from excel file to java file)
+5) Assertions
+6) Anotations
+
+
+TestNG
