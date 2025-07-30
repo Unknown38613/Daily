@@ -1,0 +1,128 @@
+We can use parameterization to pass the data to out test case (@Test Method) from XML File:
+Drawbacks:
+fixed data to test cases
+Single test case requires multiple data
+Use Case:
+If any method wants to supply data to a test case then that method should be given with annotation @DataProvider
+
+-------------------------------------------------------------------------------------------------------------------------
+2 ways to stop method single method execution:
+1)
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.abc.demo.FirstTestNGExample.firsttest.ExcelUtil"/>
+<methods> <exclude name="com.abc.demo.FirstTestNGExample.firsttest.ExcelUtil"> </exclude>
+</methods>
+  </class>
+
+      <class name="com.abc.demo.FirstTestNGExample.firsttest.Providers"/>
+      <class name="com.abc.demo.FirstTestNGExample.firsttest.Login"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+2)
+@Test(enabled= false)
+Note : It doesn't get counted in skip, it basically avoids hence total test cases will not include it
+----------------------------------------------------------------------------------------------------------------------------
+OR
+If only one method should run from class then <include>.....</include> rest others will not run
+----------------------------------------------------------------------------------------------------------------------------
+To run a test case multiple times : @Test(invocationCount = 5)
+----------------------------------------------------------------------------------------------------------------------------
+Dependency (if login fails then home page should not get executed)
+@Test(dependsOnMethods = "Login") (method name)
+Login will get failed and home page will get skipped
+----------------------------------------------------------------------------------------------------------------------------
+@Test(dependsOnMethods = "Login", alwaysRun = true) Login get failed and home page will get execute
+----------------------------------------------------------------------------------------------------------------------------
+Grouping the test cases so that only particular group/s will get executed
+@Test(groups= {"smoke"}), @Test(groups= {"smoke", "component"})
+  <classes>
+      <class name="com.abc.demo.FirstTestNGExample.firsttest.ExcelUtil"/>
+<groups><run> <include name="smoke"></inlcude></run></groups>
+  </class>
+</classes>
+-----------------------------------------------------------------------------------------------------------------------------
+Listeners:
+
+Once we get test case results:
+failed : screenshot
+passed : report
+skipped: report
+
+ITestListener Interface => some methods
+onTestPass(), onTestFail(), onTestSkip()
+OR
+TestListenerAdapter Class also have same methods 
+
+public class MyListener implements ITestListener {
+
+	@Override
+	public void onTestStart(ITestResult result) {
+		System.out.println("Started execution of: " + result.getMethod().getMethodName());
+	}
+
+	@Override
+	public void onTestSuccess(ITestResult result) {
+		System.out.println("Success : " + result.getMethod().getMethodName());
+	}
+
+	@Override
+	public void onTestFailure(ITestResult result) {
+		System.out.println("Failed: " + result.getMethod().getMethodName());
+	}
+
+	@Override
+	public void onTestSkipped(ITestResult result) {
+		System.out.println("Skipped: " + result.getMethod().getMethodName());
+	}
+
+	@Override
+	public void onStart(ITestContext context) {
+		System.out.println("Test case execution Started!");
+	}
+
+	@Override
+	public void onFinish(ITestContext context) {
+		System.out.println("Test case execution Ended!");
+	}
+
+}
+
+
+Now, do individually:
+@Listeners(MyListener.class)
+public class Login {.....}
+public class Register {.....}
+
+OR
+ 
+Directly in testing.xml File:
+<suite name="Suite">
+<listeners> <listener class-name="com.abc.demo.FirstTestNGExample.MyListener"></listener>
+</listeners>
+.....
+</suite>
+-------------------------------------------------------------------------------------------------------------------------------
+Extent Reports:
+Maven Dependency:
+<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.0.9</version>
+</dependency>
+
+Classes: ExtentSparkReporter (control the option for UI), ExtentReports(control the information inside the report like author name, date, time, env), ExtentTest(will store the results of each test case)
+-------------------------------------------------------------------------------------------------------------------------------
+Screenshot:
+File screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+
+194
+175
+179
+
