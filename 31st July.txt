@@ -1,0 +1,59 @@
+beforesuite: creating report
+aftersuite : flush()
+beforeclass: navigate website
+afterclass: delete cookies
+beforetest: open browser
+aftertest: close browser
+beforemethod: clear credentials
+aftermethod: result of test case
+
+
+selenium new locator:
+above()
+below()
+toLeftOf()
+toRightOf()
+near()
+
+driver.findElement(RelativeLocater.with(By.xpath()).above(By.xpath()));
+
+
+//input[@id='email']/parent::div  (target direct parent div of child)
+//div[@class='']/child::input (target direct child of parent)
+
+//input[@id='email']/ancestor::form (ancestor of child) (all ancestors)
+
+//input[@id='email']/self::input (self/useless)
+
+//div[@id='main']/descendent::input (descendant of parent) (all descendants)
+
+//button[contains(@class, 'submit')] for <button class='btn submit-btn'>Submit</button>
+
+//input[starts-with(@id, 'user')] same for ends-with
+
+//input[substring(@id, string-length(@id-3) = 'name]
+
+//label[text()="label"]/preceding::input (any input before label)
+
+//[@class and @type] same for or
+
+/sibling::input
+
+/following-sibling::input
+
+/preceding-sibling::input
+
+//button[normalize-space(text())='Login']  ignore space and match exact word
+
+//input[@type='text'][@placeholde='Enter name'] only first input single input tag
+
+
+
+//ul/li[2]
+//ul/[position()=2]
+
+Navigation methods: 
+driver.get()
+driver.navigate().to() subpages
+driver.navigate().back()
+driver.navigate().forward()

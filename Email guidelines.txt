@@ -1,0 +1,66 @@
+Recipient email : colleauge@email.com
+cc: manager@email.com
+Subject : Reminder on project input request
+
+Hello recipient,
+I hope you are doing well.
+This is a reminder for the email I sent last week regarding your input on our Testing project. As the deadline is approaching, our team wanted to check if you had a chance to review the request and share your thoughts.
+Your input is important for moving forward, so I would appreciate if you could reply me by 1st August, if possible.
+Looking forward to your response.
+Best regards, 
+Vedant
+
+
+Recipient email : itsupport@email.com
+cc: manager@email.com
+Subject: Request for access to Jira
+
+Dear IT Support Team, 
+
+I have recently joined a new project of Testing domain and require access to Jira to begin work.
+Could you please guide me in order to obtain it? Please let me know if you need any further information from my side.
+Thank you for your support.
+Best regards,
+Vedant
+
+Recipient email : ithelpdesk@email.com
+cc: supervisor@email.com
+Subject: Assistance Required for Office Laptop Issue
+
+Dear IT Helpdesk,
+
+I am facing an issue with my office laptop, I am not able to install required software's from Microsoft Store
+I would appreciate if someone from the team could assist me in resolving issue at the earliest, as it's impacting my work.
+Please let me know if any further details required.
+Thank You,
+Vedant
+
+
+
+Subject:Follow-up on Project Input
+Hello [Colleague's Name],
+I hope you are doing well.
+I am following up on my email from last week about [Project Name].
+The deadline is coming up soon, and I would really appreciate your input.
+Could you please share your feedback by [specific date]?
+In case of any queries, please feel free to reach out over a call/message.
+Looking forward to your reply.
+Thanks in advance for your time.
+ 
+Subject: Request for Access to [Software/Tool Name]
+Dear IT Support Team,
+I hope you are doing well.
+I have recently joined the [Project Name] team and require access to [Software/Tool Name] to begin my work.
+Could you please grant me the necessary access? If any approvals are needed, kindly let me know the process. My employee ID is [Your Employee ID], and my reporting manager is [Manager’s Name].
+Please let me know if you need any additional details.
+Looking forward to your response.
+ 
+Subject: Urgent: Laptop Issue – Assistance Required
+Dear IT Helpdesk,
+I am facing an issue with my office laptop:
+•Issue: [E.g., "System is very slow" / "Unable to install [Software Name]"]
+•Error Message: [If any, mention here] (attach screenshot if required)
+•Troubleshooting Tried: Restarted system, checked network – issue persists
+Requesting your support to resolve this at the earliest. Please advise on the next steps or schedule a remote session if needed.
+Looking forward to your assistance.
+ 
