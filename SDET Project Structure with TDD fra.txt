@@ -1,0 +1,54 @@
+SDET: Project Structure with TDD framework
+ 
+RedBusSeleniumProject
+	-- src/test/main
+ 
+	-- src/test/java
+		-- com.setup/com.driverSetup
+			--BaseSteps.java
+		-- com.pages
+			--BasePage
+			--HomePage.java
+			--SearchPage
+			--ProfilePage.java
+		-- com.tests
+			--Profile.java
+		-- com.parameter
+			--ExcelReader.java
+			--PropertyReader.java
+		--com.utils
+			--Screenshots.java (It can also written in Base page or main Test file)
+
+	-- src/test/resource(source folder)
+		-- ExcelData
+			--Data.xlxs
+		-- PropertieFiles
+			-- profile.properties
+			-- home.properties
+	-- Target/Reports (Extent Report , TestNG report)
+		-- ExtentReport.html
+ 
+	-- Runner.xml
+ 
+-------------------------------------------------------------------------------------------------------------------------------
+ 
+APISprintProject
+	-- src/test/main
+ 
+	-- src/test/java
+		-- com.baseSteps
+			--BaseSteps.java
+			--RequestSteps.java
+		-- com.parameter
+			--ExcelReader.java
+		-- com.test
+			-TestFile.java
+ 
+	-- src/test/resource(source folder)
+		-- ExcelData
+			--Data.xlxs
+		-- PropertieFiles
+			--APIURI.properties
+	--  Target/Reports (Extent report, TestNG Report)
+ 
+	-- Runner.xml

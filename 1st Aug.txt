@@ -1,0 +1,58 @@
+SOAP (Simple Object Access Protocol) API only works with XML Format (Heavy)
+
+REST (Representative State Transfer) API works with JSON (light weight)
+
+
+Body > raw > JSON > "{{name}}"
+
+if keys are double quotes it is json 
+if not then JavaScript Object
+
+
+BaseSteps
+
+setup() Extract base URI.
+
+Properties p = new Properties();ss
+
+FileInputSteam fis = new FileInputStream();
+p.load(fis);
+String recievedURI = p.getProperty("baseURI");
+
+
+
+Class RestAssured{
+
+   public static baseURI (for making URI shareable across any request)
+
+}
+
+
+
+
+
+src/main
+src/test/resource/ExcelData/Data.xlsx
+src/test/resource/PropertyFile/APIURI.properties
+
+
+RequestSteps.java:
+public class RequestSteps extends BaseSteps{
+    
+    public Response getAPI(){
+
+       RequestSpecification request = given(); //will create new request
+return request.get("/objects");
+
+}
+
+}
+
+@BeforeClass
+initialize --> BaseSteps.setup()
+
+
+callGetAPI
+
+Response res = RequestSteps.getAPI();
+println response.getBody()

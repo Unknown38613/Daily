@@ -1,0 +1,51 @@
+Selenium Assignments (try in testNG Framework or standalone which should be in class & object format)
+ 
+Assignment 1 – Frames
+URL- https://demo.guru99.com/selenium/deprecated.html
+click one option (data will be displayed)
+From the data that is displayed click on one more option
+ 
+ 
+Assignment 2 - DatePicker
+Url – https://demo.automationtesting.in/Datepicker.html
+Need to select the date from the calendar –12 May
+It should print the Month & Year in console till it doesn’t choose 12 May
+ 
+ 
+Assignment 3 – Action
+URL - https://www.capgemini.com/
+Accept the cookies
+Hover on Services
+ 
+ 
+Assignment 4  (Locators)
+Open the url        http://demo.automationtesting.in/Register.html
+Maximize the window
+Automate the entire Registration Page and Submit the form.
+ 
+Assignment 5  (Waits)
+Open the url http://www.google.com
+In the search text enter Apple
+Add Explicit wait, with a condition that first link become clickable 
+  Hint: ExpectedConditions.elementToBeClickable
+ 
+Assignment: 6
+step 1 : go to redbus page(https://www.redbus.in/)
+step 2 : in trending offers click on first 3 offers and print title of webpage
+step 3 : each offer page will display one popup close it
+[hint use switching window concepts]
+ 
+Assignment-7
+Open the url https://demoqa.com/buttons
+Maximize the browser
+Perform double click, Right click & click actions and check if the desired text is populating or not.
+ 
+Assignment 8 (Date Picker)
+Open the url https://www.path2usa.com/travel-companions
+Enter from  Alexandria International Airport (Louisiana) (AEX) Alexandria
+To  Aniak Airport (ANI) Aniak
+Click on Date of travel
+A calendar will appear, Click on the date exactly after a week(from Today)
+Make the program dynamic; wherein dates must be fetched in a List<WebElement> and selected as per our convenience.
+Enter Language as English and select Airlines
+Click on search button 
