@@ -1,0 +1,45 @@
+POM (Page Object Model), PFM (Page Factory Model), Selenium, WebDriver, ExtentReports, Screenshot, Excel File, properties file, TestNG
+Design Pattern:-
+POM - reusability, modularity, readability
+Login.java, HomePage.java, ProfilePage.java
+
+Main Class
+
+driver initialization
+new Login() then call methods
+new HomePage() call methods
+new ProfilePage() call methods
+
+Problems :
+1) Code duplication (web element, driver.findElement())
+2) hard to do some changes in locator info
+3) Doesn't support Lazy Loading (Selenium tries to find web element each time when method gets called)
+
+Page Factory Model (Not a design pattern, just a class in selenium webdriver):
+
+
+@FindBy(xpath = "")  //will find element and store element in variable;
+WebElement mobilesElem;  //by default null
+
+@FindBy(id ="")
+@CacheLookup
+WebElement emailsElem;
+
+will not work without PageFactory.initElements(driver, this); in the constructor
+
+so constructor will contain driver initialization, pagefactory initialization
+-----------------------------------------------------------------------------------------------------
+Sometimes API's are secured. 
+1) Using Basic Auth devs give username and password, tester enter it  (used within company for every end point) 
+2) API Key (once you have api key then we can access any no. of api's) (used outside of company for customers)
+
+3) Bearer Token / Access Token - once we login we get a token which is called access token and bearer token (expire after 5 minutes)
+     Refresh Token/ Renew Token - generate a new access token when access token expires then this will be used
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Testing each unit in isolated manner is unit testing
+
+JUNIT:
+
+assertThrows(ArithmeticException.class,()->{Calculator.div(10,0});
