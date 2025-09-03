@@ -1,0 +1,111 @@
+✅ Manual Testing
+These topics are foundational, conceptual, or process-oriented, and are typically associated with manual testing practices:
+
+Fundamentals of Testing
+
+Introduction to Software Testing
+Software Testing - Definitions
+Need of Software Testing
+Error-Failure-Defect
+Causes of Software Defects
+Cost of Software Defects
+What does Software Testing reveal?
+Importance of Software Testing
+Importance of Testing Early in SDLC Phases
+Testing and Quality
+Quality Perception
+Seven Testing Principles
+Economics of Testing
+How Testing is conducted?
+Software Testing – Then (Past)
+Software Testing – Now (Present)
+Scope of Software Testing
+Factors influencing the Scope of Testing
+Risk Based Testing
+Project Risks
+Product Risks
+Need of Independent Testing
+Activities in Fundamental Test Process
+Attributes of a good Tester
+Psychology of Testing
+Code of Ethics for Tester
+Limitations of Software Testing
+Testing Throughout the SDLC
+
+Software Development Lifecycle Models
+Software Development and Software Testing
+Software Development Lifecycle Models in Context
+Test Levels (Component, Integration, System, Acceptance)
+Test Types (Functional, Non-functional)
+Smoke & Sanity Testing
+Change-related Testing
+Maintenance Testing
+Triggers for Maintenance
+Impact Analysis for Maintenance
+Test Case Terminologies
+Test Data
+Static Testing
+
+Types of Testing Techniques
+Static Testing Basics
+Work Products that Can Be Examined by Static Testing
+Benefits of Static Testing
+Review Process
+Work Product Review Process
+Roles and responsibilities in a formal review
+Review Types
+Applying Review Techniques
+Test Techniques
+
+Categories of Test Techniques
+Choosing Test Techniques
+Black-box Test Techniques (Equivalence Partitioning, BVA, Decision Table, State Transition, Use Case Testing)
+White-box Test Techniques (Statement, Decision Testing)
+Experience-based Techniques (Error Guessing, Exploratory, Checklist-based)
+Test Management & Metrics
+
+Test Organization
+Independent Testing
+Tasks of a Test Manager and Tester
+Test Planning and Estimation
+Test Strategy and Test Approach
+Entry/Exit Criteria
+Test Execution Schedule
+Test Estimation Techniques
+Test Monitoring and Control
+Metrics Used in Testing
+Test Reports
+Configuration Management
+Risks and Testing
+Defect Management
+Requirement Engineering
+
+Evolution of Requirements
+Who provides the Requirements?
+Challenges in Requirement Gathering
+Why do we need good requirements?
+Characteristics & Impact of bad Requirements
+Functional Vs Non-Functional Requirements
+FURPS+
+Stable and Volatile Requirements
+Baselining Requirements
+Requirements Traceability
+Requirement Traceability Matrix
+Requirements Change
+Change Management Process
+Requirement Creep
+Use Case Testing
+
+Use case modeling
+Advantage of use cases
+Actor, Goals, Scenarios
+Naming Conventions
+Alternate Path, Exceptions, Errors
+Preconditions & Postconditions
+Good practices
+Failure scenarios
+Software Version Guidance
+
+Introduction to Software Versioning
+Major/Minor/Revision/Build Releases
+Beta Version for User Testing
